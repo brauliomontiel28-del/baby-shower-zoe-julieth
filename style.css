@@ -1,0 +1,89 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(180deg,#fffdfd,#f8f2ff,#eef7ff);
+    color:#4b3f5c;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:30px;
+}
+
+.contenido{
+    max-width:700px;
+    background:rgba(255,255,255,.88);
+    backdrop-filter:blur(8px);
+    border-radius:25px;
+    padding:40px;
+    text-align:center;
+    box-shadow:0 15px 40px rgba(0,0,0,.12);
+}
+
+h1{
+    font-family:'Great Vibes',cursive;
+    font-size:64px;
+    color:#b26ad9;
+    margin-bottom:10px;
+}
+
+h3{
+    color:#8f69b4;
+    margin-bottom:15px;
+}
+
+.frase{
+    font-size:22px;
+    font-style:italic;
+    margin:25px 0;
+    color:#7b5d95;
+}
+
+.datos p{
+    margin:18px 0;
+    font-size:18px;
+}
+
+.boton{
+    display:inline-block;
+    margin-top:18px;
+    padding:15px 28px;
+    background:#b26ad9;
+    color:white;
+    text-decoration:none;
+    border-radius:50px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.boton:hover{
+    transform:scale(1.05);
+}
+
+.whatsapp{
+    background:#25D366;
+}
+
+@media(max-width:700px){
+
+h1{
+    font-size:48px;
+}
+
+.contenido{
+    padding:25px;
+}
+
+.frase{
+    font-size:18px;
+}
+
+}
