@@ -1,35 +1,27 @@
-// =========================================
+// ===============================
 // Baby Shower Zoe Julieth
 // Script principal
-// =========================================
+// ===============================
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    // Animación de entrada
-    document.body.classList.add("mostrar");
+    const intro = document.getElementById("intro");
+    const hero = document.querySelector(".hero");
 
-    // Botón de ubicación
-    const botonMapa = document.querySelector(".boton");
+    setTimeout(() => {
 
-    if (botonMapa) {
+        intro.style.opacity = "0";
 
-        botonMapa.addEventListener("click", function (e) {
+        setTimeout(() => {
 
-            e.preventDefault();
+            intro.style.display = "none";
 
-            alert("💜 ¡Nos vemos pronto!");
+            hero.classList.remove("oculto");
 
-            setTimeout(() => {
+            hero.classList.add("mostrar");
 
-                window.open(
-                    "https://maps.google.com/?q=19.7816784,-99.0202505",
-                    "_blank"
-                );
+        }, 1200);
 
-            }, 1200);
-
-        });
-
-    }
+    }, 3500);
 
 });
