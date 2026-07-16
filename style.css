@@ -230,3 +230,17 @@ h1{
     border-radius: 20px;
     box-shadow: 0 10px 25px rgba(0,0,0,.20);
 }
+.contenido img{
+    animation: aparecerPortada 1.5s ease;
+}
+
+@keyframes aparecerPortada{
+    from{
+        opacity:0;
+        transform:translateY(25px) scale(.95);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0) scale(1);
+    }
+}
