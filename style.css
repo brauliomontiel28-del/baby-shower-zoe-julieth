@@ -154,3 +154,43 @@ h1{
         opacity:1;
     }
 }
+/* ==========================
+   BOTONES ELEGANTES
+========================== */
+
+.boton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    padding: 15px 28px;
+    margin: 12px;
+
+    border-radius: 50px;
+    border: none;
+
+    background: linear-gradient(135deg, #f8d9e8, #fceff5);
+
+    color: #8b4b72;
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
+
+    box-shadow: 0 8px 18px rgba(183,110,159,.25);
+
+    transition: all .30s ease;
+}
+
+.boton:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 14px 25px rgba(183,110,159,.35);
+}
+
+.boton:active{
+    transform: scale(.97);
+}
+
+.boton span{
+    font-size:20px;
+}
