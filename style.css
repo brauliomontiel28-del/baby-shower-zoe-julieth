@@ -222,3 +222,11 @@ h1{
     transform: scale(.95);
     transition: .15s;
 }
+.contenido img{
+    width: 220px;
+    max-width: 90%;
+    display: block;
+    margin: 0 auto 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.20);
+}
