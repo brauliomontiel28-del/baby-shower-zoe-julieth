@@ -194,3 +194,31 @@ h1{
 .boton span{
     font-size:20px;
 }
+/* ===== TOQUE ESPECIAL ===== */
+
+.boton{
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(8px);
+}
+
+.boton::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -120%;
+    width: 60%;
+    height: 100%;
+    background: rgba(255,255,255,.45);
+    transform: skewX(-25deg);
+    transition: .8s;
+}
+
+.boton:hover::before{
+    left: 160%;
+}
+
+.boton:active{
+    transform: scale(.95);
+    transition: .15s;
+}
