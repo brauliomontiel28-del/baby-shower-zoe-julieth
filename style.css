@@ -54,13 +54,14 @@ h3{
 
 .boton{
     display:inline-block;
-    margin-top:18px;
-    padding:15px 28px;
+    margin-top:14px;
+    padding:12px 22px;
     background:#b26ad9;
     color:white;
     text-decoration:none;
-    border-radius:50px;
+    border-radius:35px;
     font-weight:bold;
+    font-size:15px;
     transition:.3s;
 }
 
