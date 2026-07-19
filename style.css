@@ -379,3 +379,55 @@ h1{
 .tarjeta:active{
     transform: scale(.98);
 }
+/* ==========================
+   Aparición en secuencia
+========================== */
+
+.contenido h3,
+.contenido h1,
+.contenido .frase,
+.contenido > p,
+#contador,
+.boton{
+    opacity:0;
+    transform:translateY(20px);
+    animation:aparecerSuave .8s ease forwards;
+}
+
+.contenido h3{
+    animation-delay:.2s;
+}
+
+.contenido h1{
+    animation-delay:.5s;
+}
+
+.contenido .frase{
+    animation-delay:.8s;
+}
+
+.contenido > p{
+    animation-delay:1.1s;
+}
+
+#contador{
+    animation-delay:2.3s;
+}
+
+.boton{
+    animation-delay:2.7s;
+}
+
+@keyframes aparecerSuave{
+
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
