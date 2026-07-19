@@ -371,3 +371,11 @@ h1{
     }
 
 }
+.tarjeta:hover{
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 18px 35px rgba(178,106,217,.25);
+}
+
+.tarjeta:active{
+    transform: scale(.98);
+}
