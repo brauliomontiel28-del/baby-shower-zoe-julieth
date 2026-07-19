@@ -35,20 +35,30 @@
         <p>
             Acompáñanos a celebrar la próxima llegada de nuestra pequeña princesa.
         </p>
+        
+            <div class="datos">
 
-        <div class="datos">
+    <div class="tarjeta">
+        <h3>👨‍👩‍👧 Papás</h3>
+        <p>Braulio Damián y Gabriela Alejandra</p>
+    </div>
 
-            <p><strong>👨‍👩‍👧 Papás:</strong><br>
-            Braulio Damian y Gabriela Alejandra</p>
+    <div class="tarjeta">
+        <h3>📅 Fecha</h3>
+        <p>08 de agosto de 2026</p>
+    </div>
 
-            <p><strong>📅 Fecha:</strong><br>
-            08 de agosto de 2026</p>
+    <div class="tarjeta">
+        <h3>🕒 Hora</h3>
+        <p>3:00 p.m.</p>
+    </div>
 
-            <p><strong>🕒 Hora:</strong><br>
-            3:00 p.m.</p>
+    <div class="tarjeta">
+        <h3>📍 Lugar</h3>
+        <p>Paseo Limonero, frente al tanque rojo.</p>
+    </div>
 
-            <p><strong>📍 Lugar:</strong><br>
-            Paseo Limonero, frente al tanque rojo.</p>
+            </div>
 <h2>⏳ Faltan...</h2>
 
 <div id="contador">
@@ -100,3 +110,47 @@
 
 </body>
 </html>
+/* ==========================
+   Tarjetas del evento
+========================== */
+
+.datos{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+    margin:30px 0;
+}
+
+.tarjeta{
+    background:rgba(255,255,255,.18);
+    backdrop-filter:blur(8px);
+    border:1px solid rgba(255,255,255,.35);
+    border-radius:22px;
+    padding:18px;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+    transition:transform .35s ease,
+               box-shadow .35s ease,
+               background .35s ease;
+}
+
+.tarjeta h3{
+    margin:0 0 10px;
+    color:#b26ad9;
+    font-size:20px;
+}
+
+.tarjeta p{
+    margin:0;
+    color:#555;
+    line-height:1.6;
+}
+
+.tarjeta:hover{
+    transform:translateY(-6px);
+    box-shadow:0 18px 35px rgba(178,106,217,.25);
+    background:rgba(255,255,255,.28);
+}
+
+.tarjeta:active{
+    transform:scale(.98);
+}
