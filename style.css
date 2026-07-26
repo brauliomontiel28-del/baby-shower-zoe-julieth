@@ -112,10 +112,52 @@ h1{
     padding:20px;
     animation:aparecer 2s ease;
 }
-
 .luna{
-    font-size:70px;
+    position:relative;
+    font-size:80px;
+
     animation:flotar 3s ease-in-out infinite;
+
+    filter:
+        drop-shadow(0 0 18px rgba(255,235,170,.9))
+        drop-shadow(0 0 40px rgba(255,220,120,.45));
+}
+
+.luna::after{
+    content:"";
+
+    position:absolute;
+    left:50%;
+    top:50%;
+
+    width:140px;
+    height:140px;
+
+    transform:translate(-50%,-50%);
+    border-radius:50%;
+
+    background:radial-gradient(circle,
+        rgba(255,245,180,.35) 0%,
+        rgba(255,245,180,.15) 45%,
+        transparent 75%);
+
+    animation:brilloLuna 3s ease-in-out infinite;
+
+    z-index:-1;
+}
+
+@keyframes brilloLuna{
+
+    0%,100%{
+        transform:translate(-50%,-50%) scale(1);
+        opacity:.6;
+    }
+
+    50%{
+        transform:translate(-50%,-50%) scale(1.15);
+        opacity:1;
+    }
+
 }
 
 .oculto{
