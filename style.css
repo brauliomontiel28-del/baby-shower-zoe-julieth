@@ -512,3 +512,67 @@ h1{
     }
 
 }
+/* ===== Estrellas ===== */
+
+.estrellas{
+    position: relative;
+    width: 180px;
+    height: 60px;
+    margin: 15px auto;
+}
+
+.estrellas span{
+    position: absolute;
+    font-size: 18px;
+    animation: brillar 2.5s infinite ease-in-out;
+}
+
+.estrellas span:nth-child(1){
+    left:10%;
+    top:5px;
+    animation-delay:0s;
+}
+
+.estrellas span:nth-child(2){
+    left:35%;
+    top:30px;
+    animation-delay:.5s;
+}
+
+.estrellas span:nth-child(3){
+    left:55%;
+    top:0;
+    animation-delay:1s;
+}
+
+.estrellas span:nth-child(4){
+    left:75%;
+    top:25px;
+    animation-delay:1.5s;
+}
+
+.estrellas span:nth-child(5){
+    left:20%;
+    top:45px;
+    animation-delay:2s;
+}
+
+.estrellas span:nth-child(6){
+    left:88%;
+    top:8px;
+    animation-delay:2.3s;
+}
+
+@keyframes brillar{
+
+    0%,100%{
+        opacity:.3;
+        transform:scale(.8);
+    }
+
+    50%{
+        opacity:1;
+        transform:scale(1.3);
+    }
+
+}
