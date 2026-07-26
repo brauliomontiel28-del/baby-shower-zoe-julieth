@@ -604,3 +604,37 @@ h1{
     }
 
 }
+/* ===== Halo del cielo ===== */
+
+.brillo-fondo{
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+    radial-gradient(circle at center,
+    rgba(255,255,255,.22) 0%,
+    rgba(255,230,245,.16) 28%,
+    transparent 70%);
+
+    animation:
+    respirarCielo 5s ease-in-out infinite;
+
+    pointer-events:none;
+
+}
+
+@keyframes respirarCielo{
+
+    0%,100%{
+        opacity:.65;
+        transform:scale(1);
+    }
+
+    50%{
+        opacity:1;
+        transform:scale(1.08);
+    }
+
+}
