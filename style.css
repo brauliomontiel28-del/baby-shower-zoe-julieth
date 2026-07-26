@@ -224,12 +224,10 @@ h1{
     transition: .15s;
 }
 .contenido img{
-    width: 220px;
-    max-width: 90%;
-    display: block;
-    margin: 0 auto 25px;
-    border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(0,0,0,.20);
+    width:100%;
+    max-width:420px;
+    display:block;
+    margin:0 auto 30px;
 }
 .contenido img{
     animation: aparecerPortada 1.5s ease;
