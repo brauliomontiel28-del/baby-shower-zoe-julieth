@@ -685,3 +685,26 @@ h1{
     }
 
 }
+.icono{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    width:42px;
+    height:42px;
+
+    border-radius:50%;
+
+    background:linear-gradient(
+        135deg,
+        #ffe8f3,
+        #efe3ff
+    );
+
+    box-shadow:
+        0 4px 12px rgba(178,106,217,.20);
+
+    font-size:22px;
+
+    flex-shrink:0;
+        }
