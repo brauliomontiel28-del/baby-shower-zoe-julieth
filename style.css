@@ -784,3 +784,46 @@ overflow:hidden;
     }
 
 }
+/* ==========================
+   Mariposas
+========================== */
+
+.mariposa{
+    position:absolute;
+    font-size:28px;
+    z-index:3;
+
+    animation:volar 8s ease-in-out infinite;
+}
+
+.mariposa1{
+    top:22%;
+    left:18%;
+    animation-delay:0s;
+}
+
+.mariposa2{
+    top:68%;
+    right:18%;
+    animation-delay:3s;
+}
+
+@keyframes volar{
+
+    0%,100%{
+        transform:translateY(0) rotate(-8deg);
+    }
+
+    25%{
+        transform:translateY(-10px) rotate(5deg);
+    }
+
+    50%{
+        transform:translateY(-20px) rotate(-5deg);
+    }
+
+    75%{
+        transform:translateY(-8px) rotate(8deg);
+    }
+
+}
