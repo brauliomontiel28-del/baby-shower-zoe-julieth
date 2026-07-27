@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // Cuenta regresiva
 // ===============================
 
-const fechaEvento = new Date("2026-08-08T15:00:00").getTime();
+const fechaEvento = new Date("2026-08-15T15:00:00").getTime();
 
 function actualizarContador() {
 
