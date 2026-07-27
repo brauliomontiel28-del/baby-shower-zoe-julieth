@@ -824,6 +824,15 @@ overflow:hidden;
 
     75%{
         transform:translateY(-8px) rotate(8deg);
+    
     }
 
+}
+.despedida{
+    margin-top:40px;
+    font-size:17px;
+    line-height:1.8;
+    color:#7b5d95;
+    font-style:italic;
+    text-align:center;
 }
