@@ -725,23 +725,25 @@ overflow:hidden;
 
 .nube{
     position:absolute;
-    width:140px;
-    height:55px;
 
-    background:rgba(255,255,255,.85);
+    width:180px;
+    height:70px;
 
-    border-radius:60px;
+    background:#dff3ff;
 
-    filter:blur(1px);
+    border-radius:100px;
 
     box-shadow:
-        35px 12px 0 rgba(255,255,255,.85),
-        -30px 10px 0 rgba(255,255,255,.85),
-        10px -18px 0 rgba(255,255,255,.85);
+        40px 18px 0 #dff3ff,
+        -35px 18px 0 #dff3ff,
+        15px -20px 0 #dff3ff,
+        0 12px 28px rgba(120,170,220,.30);
 
-    opacity:.75;
+    opacity:.95;
 
-    animation:flotarNube 18s linear infinite;
+    z-index:2;
+
+    animation:flotarNube 22s linear infinite;
 }
 
 .nube1{
