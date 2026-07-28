@@ -843,3 +843,135 @@ overflow:hidden;
     font-style:italic;
     text-align:center;
 }
+/* ==========================
+   DECORACIÓN FLOTANTE
+========================== */
+
+.decoracion{
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    overflow:hidden;
+    z-index:0;
+}
+
+.hero,
+#intro{
+    position:relative;
+    z-index:1;
+}
+
+/* Mariposas */
+
+.mariposa{
+    position:absolute;
+    font-size:34px;
+    opacity:.7;
+    animation:volar 16s linear infinite;
+}
+
+.m1{
+    top:18%;
+    left:-10%;
+    animation-delay:0s;
+}
+
+.m2{
+    top:55%;
+    left:-15%;
+    animation-delay:5s;
+}
+
+.m3{
+    top:80%;
+    left:-10%;
+    animation-delay:10s;
+}
+
+/* Estrellas */
+
+.estrella{
+    position:absolute;
+    font-size:24px;
+    color:#ffd95a;
+    animation:brillar 2.5s ease-in-out infinite;
+}
+
+.e1{
+    top:12%;
+    right:15%;
+}
+
+.e2{
+    top:38%;
+    left:8%;
+}
+
+.e3{
+    top:72%;
+    right:8%;
+}
+
+/* Flores */
+
+.flor{
+    position:absolute;
+    font-size:28px;
+    opacity:.6;
+    animation:caer 18s linear infinite;
+}
+
+.f1{
+    left:20%;
+    top:-10%;
+}
+
+.f2{
+    right:18%;
+    top:-20%;
+    animation-delay:8s;
+}
+
+/* Animaciones */
+
+@keyframes volar{
+
+    0%{
+        transform:translateX(0) translateY(0) rotate(0deg);
+    }
+
+    50%{
+        transform:translateX(60vw) translateY(-40px) rotate(10deg);
+    }
+
+    100%{
+        transform:translateX(120vw) translateY(20px) rotate(-10deg);
+    }
+
+}
+
+@keyframes brillar{
+
+    0%,100%{
+        opacity:.3;
+        transform:scale(.8);
+    }
+
+    50%{
+        opacity:1;
+        transform:scale(1.2);
+    }
+
+}
+
+@keyframes caer{
+
+    0%{
+        transform:translateY(-100px) rotate(0deg);
+    }
+
+    100%{
+        transform:translateY(120vh) rotate(360deg);
+    }
+
+}
