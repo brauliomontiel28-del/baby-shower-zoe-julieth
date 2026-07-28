@@ -17,8 +17,30 @@ document.addEventListener("DOMContentLoaded", () => {
             intro.style.display = "none";
 
             hero.classList.remove("oculto");
+hero.classList.add("mostrar");
 
-            hero.classList.add("mostrar");
+// Iniciar música
+const musica = document.getElementById("musica");
+musica.volume = 0;
+musica.play().catch(() => {});
+
+// Efecto de volumen gradual
+let volumen = 0;
+
+const subirVolumen = setInterval(() => {
+
+    if (volumen < 0.35) {
+
+        volumen += 0.02;
+        musica.volume = volumen;
+
+    } else {
+
+        clearInterval(subirVolumen);
+
+    }
+
+}, 250);
 
         }, 1200);
 
