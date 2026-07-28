@@ -876,8 +876,7 @@ overflow:hidden;
     z-index:0;
 }
 
-.hero,
-#intro{
+.hero{
     position:relative;
     z-index:1;
 }
@@ -888,7 +887,7 @@ overflow:hidden;
     position:absolute;
     font-size:34px;
     opacity:.7;
-    animation:volar 16s linear infinite;
+    animation:volarDecoracion 16s linear infinite;
 }
 
 .m1{
@@ -955,7 +954,7 @@ overflow:hidden;
 
 /* Animaciones */
 
-@keyframes volar{
+@keyframes volarDecoracion{
 
     0%{
         transform:translateX(0) translateY(0) rotate(0deg);
