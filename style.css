@@ -814,30 +814,62 @@ overflow:hidden;
 }
 
 .nube1{
-    top:15%;
-    left:-180px;
-    animation-duration:22s;
+
+    top:14%;
+    left:-220px;
+
+    transform:scale(.8);
+
+    opacity:.55;
+
+    animation-duration:38s;
+
 }
 
 .nube2{
-    top:35%;
-    left:-220px;
+
+    top:34%;
+    left:-250px;
+
+    transform:scale(1);
+
+    opacity:.8;
+
     animation-duration:28s;
-    animation-delay:4s;
+
+    animation-delay:5s;
+
 }
 
 .nube3{
-    top:60%;
-    left:-200px;
-    animation-duration:24s;
-    animation-delay:8s;
+
+    top:58%;
+    left:-180px;
+
+    transform:scale(1.25);
+
+    opacity:.95;
+
+    animation-duration:22s;
+
+    animation-delay:3s;
+
 }
 
 .nube4{
+
     top:78%;
-    left:-250px;
-    animation-duration:30s;
-    animation-delay:2s;
+
+    left:-280px;
+
+    transform:scale(.9);
+
+    opacity:.65;
+
+    animation-duration:33s;
+
+    animation-delay:8s;
+
 }
 
 @keyframes flotarNube{
