@@ -96,3 +96,15 @@ window.addEventListener("load", iniciarMusica);
 
 document.addEventListener("click", iniciarMusica, { once: true });
 document.addEventListener("touchstart", iniciarMusica, { once: true });
+const musica = document.getElementById("musica");
+const botonMusica = document.getElementById("activarMusica");
+
+botonMusica.addEventListener("click", () => {
+
+    musica.volume = 0.35;
+
+    musica.play();
+
+    botonMusica.style.display = "none";
+
+});
