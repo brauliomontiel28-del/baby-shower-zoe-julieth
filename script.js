@@ -21,8 +21,14 @@ hero.classList.add("mostrar");
 
 // Iniciar música
 const musica = document.getElementById("musica");
-musica.volume = 0;
-musica.play().catch(() => {});
+
+musica.volume = 0.4;
+
+window.addEventListener("load", () => {
+    musica.play().catch(error => {
+        console.log("No se pudo reproducir:", error);
+    });
+});
 
 // Efecto de volumen gradual
 let volumen = 0;
