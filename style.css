@@ -1110,3 +1110,61 @@ Pantalla de bienvenida
     font-family:'Great Vibes',cursive;
 
 }
+.mensaje-bienvenida{
+
+    font-family:'Great Vibes', cursive;
+
+    font-size:2.1rem;
+
+    line-height:1.8;
+
+    color:#9c5cc6;
+
+    text-align:center;
+
+    max-width:700px;
+
+    padding:0 30px;
+
+    text-shadow:
+        0 0 12px rgba(255,255,255,.9),
+        0 0 20px rgba(255,215,240,.5);
+
+    animation: aparecerMensaje 2.5s ease;
+
+}
+
+.mensaje-bienvenida strong{
+
+    display:block;
+
+    margin:18px 0;
+
+    font-size:2.6rem;
+
+    color:#b26ad9;
+
+    }
+@keyframes aparecerMensaje{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+        filter:blur(8px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+        filter:blur(0);
+
+    }
+
+}
