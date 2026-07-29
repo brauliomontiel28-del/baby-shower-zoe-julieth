@@ -80,3 +80,19 @@ function actualizarContador() {
 
 actualizarContador();
 setInterval(actualizarContador, 1000);
+const musica = document.getElementById("musica");
+
+function iniciarMusica() {
+    musica.volume = 0.35;
+
+    musica.play().then(() => {
+        console.log("Música iniciada");
+    }).catch(() => {
+        console.log("Esperando interacción...");
+    });
+}
+
+window.addEventListener("load", iniciarMusica);
+
+document.addEventListener("click", iniciarMusica, { once: true });
+document.addEventListener("touchstart", iniciarMusica, { once: true });
