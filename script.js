@@ -97,14 +97,21 @@ window.addEventListener("load", iniciarMusica);
 document.addEventListener("click", iniciarMusica, { once: true });
 document.addEventListener("touchstart", iniciarMusica, { once: true });
 const musica = document.getElementById("musica");
-const botonMusica = document.getElementById("activarMusica");
+const pantalla = document.getElementById("activarMusica");
+const lunaBoton = document.querySelector(".luna-boton");
 
-botonMusica.addEventListener("click", () => {
+lunaBoton.addEventListener("click", () => {
 
     musica.volume = 0.35;
 
     musica.play();
 
-    botonMusica.style.display = "none";
+    pantalla.style.opacity = "0";
+
+    setTimeout(()=>{
+
+        pantalla.style.display = "none";
+
+    },1000);
 
 });
