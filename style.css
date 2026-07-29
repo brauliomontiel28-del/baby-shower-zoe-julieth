@@ -163,8 +163,9 @@ overflow:hidden;
         filter .4s ease;
 
     animation:
-        flotar 4s ease-in-out infinite,
-        brilloLuna 3.5s ease-in-out infinite;
+    respirarLuna 3s ease-in-out infinite,
+    flotar 4s ease-in-out infinite,
+    brilloLuna 3.5s ease-in-out infinite;
 
     filter:
         drop-shadow(0 0 25px rgba(255,240,180,.95))
@@ -1283,6 +1284,21 @@ Pantalla de bienvenida
 
         opacity:1;
         transform:scale(1.4) rotate(20deg);
+
+    }
+
+}
+@keyframes respirarLuna{
+
+    0%,100%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.06);
 
     }
 
