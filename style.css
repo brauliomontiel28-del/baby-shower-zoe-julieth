@@ -1168,3 +1168,39 @@ Pantalla de bienvenida
     }
 
 }
+.linea{
+
+    display:block;
+
+    opacity:0;
+
+    transform:translateY(20px);
+
+    animation:aparecerLinea .8s forwards;
+
+}
+
+.l1{animation-delay:.5s;}
+.l2{animation-delay:1.5s;}
+.l3{animation-delay:2.8s;}
+.l4{animation-delay:4.2s;}
+.l5{animation-delay:5.8s;}
+.l6{animation-delay:7.3s;}
+
+@keyframes aparecerLinea{
+
+    from{
+
+        opacity:0;
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
