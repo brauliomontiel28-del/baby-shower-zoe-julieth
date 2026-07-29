@@ -720,28 +720,37 @@ overflow:hidden;
     inset:0;
 
     background:
-    radial-gradient(circle at center,
-    rgba(255,255,255,.22) 0%,
-    rgba(255,230,245,.16) 28%,
-    transparent 70%);
+        radial-gradient(circle at center,
+        rgba(255,255,255,.30) 0%,
+        rgba(255,245,210,.22) 18%,
+        rgba(255,225,245,.12) 38%,
+        transparent 72%);
 
     animation:
-    respirarCielo 5s ease-in-out infinite;
+        respirarCielo 5s ease-in-out infinite;
 
     pointer-events:none;
+
+    z-index:1;
 
 }
 
 @keyframes respirarCielo{
 
     0%,100%{
-        opacity:.65;
+
+        opacity:.55;
+
         transform:scale(1);
+
     }
 
     50%{
+
         opacity:1;
-        transform:scale(1.08);
+
+        transform:scale(1.18);
+
     }
 
 }
