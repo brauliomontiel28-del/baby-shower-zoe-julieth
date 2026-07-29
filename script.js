@@ -19,35 +19,6 @@ document.addEventListener("DOMContentLoaded", () => {
             hero.classList.remove("oculto");
 hero.classList.add("mostrar");
 
-// Iniciar música
-const musica = document.getElementById("musica");
-
-musica.volume = 0.4;
-
-window.addEventListener("load", () => {
-    musica.play().catch(error => {
-        console.log("No se pudo reproducir:", error);
-    });
-});
-
-// Efecto de volumen gradual
-let volumen = 0;
-
-const subirVolumen = setInterval(() => {
-
-    if (volumen < 0.35) {
-
-        volumen += 0.02;
-        musica.volume = volumen;
-
-    } else {
-
-        clearInterval(subirVolumen);
-
-    }
-
-}, 250);
-
         }, 1200);
 
     }, 3500);
@@ -80,38 +51,3 @@ function actualizarContador() {
 
 actualizarContador();
 setInterval(actualizarContador, 1000);
-const musica = document.getElementById("musica");
-
-function iniciarMusica() {
-    musica.volume = 0.35;
-
-    musica.play().then(() => {
-        console.log("Música iniciada");
-    }).catch(() => {
-        console.log("Esperando interacción...");
-    });
-}
-
-window.addEventListener("load", iniciarMusica);
-
-document.addEventListener("click", iniciarMusica, { once: true });
-document.addEventListener("touchstart", iniciarMusica, { once: true });
-const musica = document.getElementById("musica");
-const pantalla = document.getElementById("activarMusica");
-const lunaBoton = document.querySelector(".luna-boton");
-
-lunaBoton.addEventListener("click", () => {
-
-    musica.volume = 0.35;
-
-    musica.play();
-
-    pantalla.style.opacity = "0";
-
-    setTimeout(()=>{
-
-        pantalla.style.display = "none";
-
-    },1000);
-
-});
