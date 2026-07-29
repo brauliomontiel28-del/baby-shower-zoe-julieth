@@ -1018,3 +1018,32 @@ overflow:hidden;
     }
 
 }
+.boton-musica{
+
+    position:fixed;
+
+    inset:0;
+
+    width:100%;
+    height:100%;
+
+    border:none;
+
+    background:rgba(255,255,255,.15);
+    backdrop-filter:blur(10px);
+
+    color:#9c5cc6;
+
+    font-size:24px;
+    font-weight:bold;
+
+    z-index:99999;
+
+    cursor:pointer;
+}
+
+.boton-musica:hover{
+
+    background:rgba(255,255,255,.22);
+
+}
