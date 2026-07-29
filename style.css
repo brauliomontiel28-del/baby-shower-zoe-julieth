@@ -1312,3 +1312,16 @@ Pantalla de bienvenida
     }
 
 }
+.luna.activa{
+
+    animation:none;
+
+    transform:scale(1.35);
+
+    filter:
+        drop-shadow(0 0 40px rgba(255,245,180,1))
+        drop-shadow(0 0 90px rgba(255,220,120,.95));
+
+    transition:.45s;
+
+}
