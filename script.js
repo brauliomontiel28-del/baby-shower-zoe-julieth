@@ -40,14 +40,14 @@ setTimeout(() => {
 
     intro.style.opacity = "0";
 
-    setTimeout(() => {
+requestAnimationFrame(() => {
 
-        intro.style.display = "none";
+    intro.style.display = "none";
 
-        hero.classList.remove("oculto");
-        hero.classList.add("mostrar");
+    hero.classList.remove("oculto");
+    hero.classList.add("mostrar");
 
-    }, 1200);
+});
 
 }, 3500);
 
