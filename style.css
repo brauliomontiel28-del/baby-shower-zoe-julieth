@@ -1325,3 +1325,52 @@ Pantalla de bienvenida
     transition:.45s;
 
 }
+/* ==========================
+   Luna mágica al tocarla
+========================== */
+
+.luna{
+    cursor:pointer;
+    transition:
+        transform .8s ease,
+        filter .8s ease;
+}
+
+.luna-activa{
+
+    transform:scale(1.18);
+
+    animation:
+        flotar 2.5s ease-in-out infinite,
+        brilloLunaActiva 1.5s ease-in-out infinite;
+
+}
+
+@keyframes brilloLunaActiva{
+
+    0%{
+
+        filter:
+        drop-shadow(0 0 20px #fff6b0)
+        drop-shadow(0 0 40px #ffe57a);
+
+    }
+
+    50%{
+
+        filter:
+        drop-shadow(0 0 40px #fff8c8)
+        drop-shadow(0 0 80px #ffd54d)
+        drop-shadow(0 0 120px #fff59d);
+
+    }
+
+    100%{
+
+        filter:
+        drop-shadow(0 0 20px #fff6b0)
+        drop-shadow(0 0 40px #ffe57a);
+
+    }
+
+}
