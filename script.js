@@ -74,7 +74,6 @@ setTimeout(() => {
 
         hero.classList.remove("oculto");
         hero.classList.add("mostrar");
-alert("Ya pasé a la portada");
     }, 1200);
 
  }, 1800);
