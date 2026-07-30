@@ -48,10 +48,10 @@ alert("La función iniciarExperiencia se ejecutó");
 
     musica.play()
 .then(() => {
-    console.log("La música comenzó correctamente");
+    alert("La música inició correctamente");
 })
 .catch((error) => {
-    console.log("Error al reproducir:", error);
+    alert(error.name + "\n\n" + error.message);
 });
 
     let volumen = 0;
