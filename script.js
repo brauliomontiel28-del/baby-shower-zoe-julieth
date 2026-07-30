@@ -32,14 +32,15 @@ setInterval(actualizarContador, 1000);
 const intro = document.getElementById("intro");
 const hero = document.querySelector(".hero");
 const musica = document.getElementById("musica");
-
+alert(musica);
 let inicio = false;
 
 intro.addEventListener("click", iniciarExperiencia);
 intro.addEventListener("touchstart", iniciarExperiencia);
 
-function iniciarExperiencia(){
-alert("La función iniciarExperiencia se ejecutó");
+function iniciarExperiencia(event){
+event.preventDefault();
+    alert("La función iniciarExperiencia se ejecutó");
     if(inicio) return;
 
     inicio = true;
