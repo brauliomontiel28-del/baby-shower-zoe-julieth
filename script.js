@@ -35,8 +35,8 @@ const musica = document.getElementById("musica");
 
 let inicio = false;
 
-document.addEventListener("click", iniciarExperiencia, { once: true });
-document.addEventListener("touchstart", iniciarExperiencia, { once: true });
+intro.addEventListener("click", iniciarExperiencia);
+intro.addEventListener("touchstart", iniciarExperiencia);
 
 function iniciarExperiencia(){
 alert("La función iniciarExperiencia se ejecutó");
