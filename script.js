@@ -51,3 +51,61 @@ function actualizarContador() {
 
 actualizarContador();
 setInterval(actualizarContador, 1000);
+// ===============================
+// Luna + Música + Transición
+// ===============================
+
+const intro = document.getElementById("intro");
+const hero = document.querySelector(".hero");
+const luna = document.querySelector(".luna");
+const musica = document.getElementById("musica");
+
+let inicio = false;
+
+luna.style.cursor = "pointer";
+
+luna.addEventListener("click", () => {
+
+    if (inicio) return;
+
+    inicio = true;
+
+    // Música
+    musica.volume = 0;
+    musica.play().catch(() => {});
+
+    // Subir volumen poco a poco
+    let volumen = 0;
+
+    const efecto = setInterval(() => {
+
+        volumen += 0.02;
+
+        musica.volume = volumen;
+
+        if (volumen >= 0.35) {
+            clearInterval(efecto);
+        }
+
+    },150);
+
+    // Brillo de la luna
+    luna.classList.add("luna-activa");
+
+    // Desaparece la intro
+    setTimeout(()=>{
+
+        intro.style.opacity="0";
+
+        setTimeout(()=>{
+
+            intro.style.display="none";
+
+            hero.classList.remove("oculto");
+            hero.classList.add("mostrar");
+
+        },1200);
+
+    },1800);
+
+});
