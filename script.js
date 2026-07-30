@@ -39,7 +39,7 @@ document.addEventListener("click", iniciarExperiencia, { once: true });
 document.addEventListener("touchstart", iniciarExperiencia, { once: true });
 
 function iniciarExperiencia(){
-
+alert("La función iniciarExperiencia se ejecutó");
     if(inicio) return;
 
     inicio = true;
