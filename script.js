@@ -64,3 +64,17 @@ musica.play().catch(() => {});
     const luna = document.querySelector(".luna");
 
     luna.classList.add("luna-activa");
+setTimeout(() => {
+
+    intro.style.opacity = "0";
+
+    setTimeout(() => {
+
+        intro.style.display = "none";
+
+        hero.classList.remove("oculto");
+        hero.classList.add("mostrar");
+
+    }, 1200);
+
+}, 1800);
