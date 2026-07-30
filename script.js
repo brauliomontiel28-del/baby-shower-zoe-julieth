@@ -35,25 +35,16 @@ const musica = document.getElementById("musica");
 alert(musica);
 let inicio = false;
 
-intro.addEventListener("click", iniciarExperiencia);
-intro.addEventListener("touchstart", iniciarExperiencia);
+intro.addEventListener("pointerdown", iniciarExperiencia);
 
-function iniciarExperiencia(event){
+async function iniciarExperiencia(event){
 event.preventDefault();
-    alert("La función iniciarExperiencia se ejecutó");
     if(inicio) return;
 
     inicio = true;
 
     musica.volume = 0;
-
-    musica.play()
-.then(() => {
-    alert("La música inició correctamente");
-})
-.catch((error) => {
-    alert(error.name + "\n\n" + error.message);
-});
+await musica.play();
 
     let volumen = 0;
 
