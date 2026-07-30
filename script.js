@@ -52,47 +52,48 @@ function actualizarContador() {
 actualizarContador();
 setInterval(actualizarContador, 1000);
 // ===============================
-// Luna + Música + Transición
+// Música + Intro
 // ===============================
 
 const intro = document.getElementById("intro");
 const hero = document.querySelector(".hero");
-const luna = document.querySelector(".luna");
 const musica = document.getElementById("musica");
 
 let inicio = false;
 
-luna.style.cursor = "pointer";
+document.addEventListener("click", iniciarExperiencia, { once: true });
+document.addEventListener("touchstart", iniciarExperiencia, { once: true });
 
-luna.addEventListener("click", () => {
+function iniciarExperiencia(){
 
-    if (inicio) return;
+    if(inicio) return;
 
     inicio = true;
 
-    // Música
     musica.volume = 0;
-    musica.play().catch(() => {});
 
-    // Subir volumen poco a poco
+    musica.play().catch(()=>{});
+
     let volumen = 0;
 
-    const efecto = setInterval(() => {
+    const subir = setInterval(()=>{
 
         volumen += 0.02;
 
         musica.volume = volumen;
 
-        if (volumen >= 0.35) {
-            clearInterval(efecto);
+        if(volumen >= 0.35){
+
+            clearInterval(subir);
+
         }
 
     },150);
 
-    // Brillo de la luna
+    const luna = document.querySelector(".luna");
+
     luna.classList.add("luna-activa");
 
-    // Desaparece la intro
     setTimeout(()=>{
 
         intro.style.opacity="0";
@@ -108,4 +109,4 @@ luna.addEventListener("click", () => {
 
     },1800);
 
-});
+}
