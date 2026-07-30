@@ -1374,3 +1374,30 @@ Pantalla de bienvenida
     }
 
 }
+/* ===== Orden de capas de la intro ===== */
+
+.brillo-fondo{
+    z-index:1;
+}
+
+.nube{
+    z-index:2;
+}
+
+.estrellas{
+    z-index:3;
+}
+
+.mariposa1,
+.mariposa2{
+    z-index:4;
+}
+
+.luna{
+    z-index:5;
+}
+
+#intro h2{
+    position:relative;
+    z-index:6;
+}
