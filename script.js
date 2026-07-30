@@ -46,7 +46,13 @@ function iniciarExperiencia(){
 
     musica.volume = 0;
 
-    musica.play().catch(()=>{});
+    musica.play()
+.then(() => {
+    console.log("La música comenzó correctamente");
+})
+.catch((error) => {
+    console.log("Error al reproducir:", error);
+});
 
     let volumen = 0;
 
