@@ -32,7 +32,6 @@ setInterval(actualizarContador, 1000);
 const intro = document.getElementById("intro");
 const hero = document.querySelector(".hero");
 const musica = document.getElementById("musica");
-alert(musica);
 let inicio = false;
 
 intro.addEventListener("pointerdown", iniciarExperiencia);
@@ -44,7 +43,7 @@ event.preventDefault();
     inicio = true;
 
     musica.volume = 0;
-await musica.play();
+musica.play().catch(() => {});
 
     let volumen = 0;
 
@@ -65,20 +64,3 @@ await musica.play();
     const luna = document.querySelector(".luna");
 
     luna.classList.add("luna-activa");
-
-    setTimeout(()=>{
-
-        intro.style.opacity="0";
-
-        setTimeout(()=>{
-
-            intro.style.display="none";
-
-            hero.classList.remove("oculto");
-            hero.classList.add("mostrar");
-
-        },1200);
-
-    },1800);
-
-}
