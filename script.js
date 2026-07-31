@@ -54,13 +54,12 @@ const activarMusica = document.getElementById("activarMusica");
         document.getElementById("segundos").textContent = segundos;
 
     }
+actualizarContador();
+setInterval(actualizarContador, 1000);
 
-    actualizarContador();
-    setInterval(actualizarContador, 1000);
-
-});
-const botonMusica = document.getElementById("botonMusica");
-const musica = document.getElementById("musica");
+// ===============================
+// Botón de música
+// ===============================
 
 botonMusica.addEventListener("click", async () => {
 
@@ -70,18 +69,20 @@ botonMusica.addEventListener("click", async () => {
 
         await musica.play();
 
-        botonMusica.style.opacity = "0";
+        activarMusica.style.opacity = "0";
 
         setTimeout(() => {
 
-            botonMusica.style.display = "none";
+            activarMusica.style.display = "none";
 
         }, 500);
 
-    } catch (e) {
+    } catch (error) {
 
-        console.log(e);
+        console.log(error);
 
     }
+
+});
 
 });
