@@ -8,7 +8,9 @@ document.addEventListener("DOMContentLoaded", () => {
     // Elementos principales
     const intro = document.getElementById("intro");
     const hero = document.querySelector(".hero");
-
+const musica = document.getElementById("musica");
+const botonMusica = document.getElementById("botonMusica");
+const activarMusica = document.getElementById("activarMusica");
     // ===============================
     // Intro automática
     // ===============================
