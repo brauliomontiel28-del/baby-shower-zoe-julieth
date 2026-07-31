@@ -57,3 +57,29 @@ document.addEventListener("DOMContentLoaded", () => {
     setInterval(actualizarContador, 1000);
 
 });
+const botonMusica = document.getElementById("botonMusica");
+const musica = document.getElementById("musica");
+
+botonMusica.addEventListener("click", async () => {
+
+    try {
+
+        musica.volume = 0.35;
+
+        await musica.play();
+
+        botonMusica.style.opacity = "0";
+
+        setTimeout(() => {
+
+            botonMusica.style.display = "none";
+
+        }, 500);
+
+    } catch (e) {
+
+        console.log(e);
+
+    }
+
+});
